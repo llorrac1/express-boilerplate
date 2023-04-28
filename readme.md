@@ -5,14 +5,24 @@ Boilerplate Express API With Typescript and Prisma support
 To install: 
 
 ```
-> git clone https://github.com/llorrac1/express-boilerplate
-> npm install
-> npm start
+# clone this repo
+git clone https://github.com/llorrac1/express-boilerplate
+
+# install dependencies 
+npm install
+
+# compile typescript
+npx tsc
 ```
 
 On changes to DB models run 
 ```
-> npx prisma migrate dev --name init
+npx prisma migrate dev --name init
+```
+
+When you're ready to run the app
+```
+npm start
 ```
 
 ## Dependencies 
