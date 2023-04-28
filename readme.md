@@ -15,6 +15,16 @@ npm install
 npx tsc
 ```
 
+Add an env file 
+```
+touch .env
+```
+
+Add a PORT variable to .env to tell express which port to use
+```
+PORT='3000'
+```
+
 On changes to DB models run 
 ```
 npx prisma migrate dev --name init
