@@ -20,12 +20,13 @@ Add an env file
 touch .env
 ```
 
-Add a PORT variable to .env to tell express which port to use
+Add a PORT variable and DB location to .env
 ```
+DATABASE_URL="file:./dev.db"
 PORT='3000'
 ```
 
-On changes to DB models run 
+To confirm or commit changes to DB models run 
 ```
 npx prisma migrate dev --name init
 ```
