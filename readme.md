@@ -5,19 +5,18 @@ Boilerplate Express API With Typescript and Prisma support
 To install: 
 
 ```
-git clone {this repo}
-npm install
-npm start
+> git clone https://github.com/llorrac1/express-boilerplate
+> npm install
+> npm start
 ```
 
 On changes to DB models run 
 ```
-npx prisma migrate dev --name init
+> npx prisma migrate dev --name init
 ```
 
-
 ## Dependencies 
-Expresss: https://expressjs.com/ 
+Express: https://expressjs.com/ 
 
 Prisma: https://www.prisma.io/docs 
 
@@ -37,10 +36,7 @@ Dotenv: https://github.com/motdotla/dotenv
     DB->>Controller: {Message}
     Controller->>Router: {MessageDTO}
     Router->>App: HTTP Response
-
-
 ```
-
 
 ### Workflow to rebuild 
 Short hand notes to start from scratch with these packages if you wanted to... no guarantees on accuracy of these commands. 
@@ -59,10 +55,8 @@ Short hand notes to start from scratch with these packages if you wanted to... n
 
 `npx prisma init --datasource-provider sqlite`
 
-Add any models to the schema 
+... Add any models to the schema 
 
 `npx prisma migrate dev --name init`
 
 `npx tsc`
-
-Prisma: https://www.prisma.io/docs/getting-started/quickstart 
